@@ -1,0 +1,34 @@
+1. Resizing the images: The original image size was 640X480px, and our model 
+   required compressed images of size 224X224px.
+
+2. Augmentation: Randomly augmented images by rotating them by different angles 
+   to increase the amount of dataset while introducing variation.
+
+3. Model used: We used a resnet inspired CNN architecture to train our model. 
+   The model outputs 4 values which serve as the coordinates of the bounding box.
+
+4. Fine tuning: We used a learning rate scheduler to reach the global minimum.
+   We used dropouts at various levels of our architecture to prevent overfitting.
+
+5. Training and validation split:
+    a. Training data: 13000 images
+    b. Testing data: 1000 images
+
+6. We saved the model state giving the highest validation accuracy.
+
+7. Suitable comments have been written along with the code in flipkart.py 
+   The changes to be made are explained with the help of the comments.
+
+8. For best implementation of the program, it is advised to copy the code into
+   a jupyter notebook and run it cell by cell.	
+
+Major Libraries and frameworks used: 
+i) Tensorflow(Keras)
+ii) Numpy
+iii) Pandas
+iv) matplotlib
+
+Resources Used:
+- Google Colaboratory with Nvidia Tesla K80 GPU
+
+
